@@ -1,1 +1,16 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/var/www
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: ecommerce_api
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
 
