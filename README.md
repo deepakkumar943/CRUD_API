@@ -1,5 +1,27 @@
-please follow some steps for run the project
-1. 
+Please follow some steps for run the project
+1. Download zip and unzip
+2. composer install
+3. .env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=ecommerce_api
+   DB_USERNAME=root
+   DB_PASSWORD=
+4. [project path ]
+   php artisan migrate
+5. http://127.0.0.1:8000/products
+6. Open postman
+   1. GET
+     http://127.0.0.1:8000/api/products
+   2. POST
+     http://127.0.0.1:8000/api/products
+   3. PUT
+      http://127.0.0.1:8000/api/products/1
+   4. DELETE
+      http://127.0.0.1:8000/api/products/1
+
+Thank you
 
 
 
